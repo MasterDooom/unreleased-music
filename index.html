@@ -8,6 +8,10 @@
 </head>
 <body class="dark-theme">
   <header class="hero-header">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f1d49?auto=format&fit=crop&w=1200&q=80" alt="Music Background" class="hero-img">
+      <div class="hero-gradient"></div>
+    </div>
     <h1>Unreleased Archive</h1>
     <p class="site-desc">Browse rare and unreleased tracks from your favorite artists.</p>
   </header>
@@ -16,15 +20,56 @@
   </section>
   <section class="artists-list">
     <h2>Artists</h2>
-    <div id="artists-rows">
-      <a href="artists/billie-eilish.html" class="artist-row">Billie Eilish</a>
-      <a href="artists/frank-ocean.html" class="artist-row">Frank Ocean</a>
-      <a href="artists/lana-del-rey.html" class="artist-row">Lana Del Rey</a>
-      <a href="artists/the-weeknd.html" class="artist-row">The Weeknd</a>
-      <a href="artists/tv-girl.html" class="artist-row">TV Girl</a>
+    <div class="artist-grid">
+      <a href="artists/billie-eilish.html" class="artist-card">
+        <img src="assets/images/artists/BE.jpg" alt="Billie Eilish" class="artist-thumb">
+        <span class="artist-name">Billie Eilish</span>
+      </a>
+      <a href="artists/frank-ocean.html" class="artist-card">
+        <img src="assets/images/artists/fo.jpg" alt="Frank Ocean" class="artist-thumb">
+        <span class="artist-name">Frank Ocean</span>
+      </a>
+      <a href="artists/lana-del-rey.html" class="artist-card">
+        <img src="assets/images/artists/ldr.jpg" alt="Lana Del Rey" class="artist-thumb">
+        <span class="artist-name">Lana Del Rey</span>
+      </a>
+      <a href="artists/the-weeknd.html" class="artist-card">
+        <img src="assets/images/artists/tw.jpg" alt="The Weeknd" class="artist-thumb">
+        <span class="artist-name">The Weeknd</span>
+      </a>
+      <a href="artists/tv-girl.html" class="artist-card">
+        <img src="assets/images/artists/tvg.jpg" alt="TV Girl" class="artist-thumb">
+        <span class="artist-name">TV Girl</span>
+      </a>
     </div>
   </section>
   <section class="recent-uploads">
+      <section class="featured-tracks">
+        <h2>Featured Tracks</h2>
+        <div class="featured-tracks-list">
+          <div class="featured-track">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Billie_Eilish_-_Happier_Than_Ever.png" alt="Happier Than Ever" class="featured-cover">
+            <div class="featured-info">
+              <span class="featured-title">Happier Than Ever (Demo)</span>
+              <span class="featured-artist">Billie Eilish</span>
+            </div>
+          </div>
+          <div class="featured-track">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Frank_Ocean_-_Blonde.png" alt="Blonde" class="featured-cover">
+            <div class="featured-info">
+              <span class="featured-title">Motion (Demo)</span>
+              <span class="featured-artist">Frank Ocean</span>
+            </div>
+          </div>
+          <div class="featured-track">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Lana_Del_Rey_-_Blue_Banisters.png" alt="Blue Banisters" class="featured-cover">
+            <div class="featured-info">
+              <span class="featured-title">Cherry Blossom</span>
+              <span class="featured-artist">Lana Del Rey</span>
+            </div>
+          </div>
+        </div>
+      </section>
     <h2>Recent Uploads</h2>
     <div class="recent-tracks">
       <div class="recent-track">
