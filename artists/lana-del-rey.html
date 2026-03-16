@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lana Del Rey - Unreleased Archive</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="dark-theme">
+  <header class="artist-header">
+    <h1>Lana Del Rey</h1>
+    <a href="../index.html" class="back-link">&#8592; Back to Artists</a>
+  </header>
+  <section class="discography-section">
+    <h2>Discography</h2>
+    <div class="albums-list">
+      <div class="album-block" onclick="toggleTracklist(this)">
+        <img src="../assets/images/lana-del-rey-album.jpg" alt="Album Cover" class="album-cover">
+        <div class="album-info">
+          <span class="album-title">Cherry Blossom</span>
+          <span class="album-year">2026</span>
+          <span class="album-tracks">6 tracks</span>
+        </div>
+        <div class="tracklist" style="display:none;">
+          <table class="tracklist-table">
+            <thead>
+              <tr><th>#</th><th>Title</th><th>Length</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Cherry Blossom</td><td>3:48</td><td><button class="play-btn"></button></td></tr>
+              <tr><td>2</td><td>Fine China (Demo)</td><td>3:22</td><td><button class="play-btn"></button></td></tr>
+              <tr><td>3</td><td>Wildflower (Unreleased)</td><td>3:35</td><td><button class="play-btn"></button></td></tr>
+              <tr><td>4</td><td>Blue Banisters (Alt)</td><td>3:41</td><td><button class="play-btn"></button></td></tr>
+              <tr><td>5</td><td>Dealer (Demo)</td><td>3:29</td><td><button class="play-btn"></button></td></tr>
+              <tr><td>6</td><td>Thunder (Demo)</td><td>3:17</td><td><button class="play-btn"></button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function toggleTracklist(albumBlock) {
+      const tracklist = albumBlock.querySelector('.tracklist');
+      tracklist.style.display = tracklist.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
